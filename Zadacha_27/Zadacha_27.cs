@@ -7,12 +7,11 @@
 Console.WriteLine ("Введите целое число");
 string N = Console.ReadLine();
 int NN = Convert.ToInt32(N);
-int ost = 0;
 int sum =  0;
 
 for (int i = 0; i <= N.Length; i++)
 {
-    ost = NN % 10;
+    int ost = NN % 10;
     NN = NN /10;
     sum = sum + ost;
 }
